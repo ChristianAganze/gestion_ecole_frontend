@@ -1,0 +1,58 @@
+<template>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">Gestion École</a>
+            <button
+                class="navbar-toggler"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#navbarNav"
+                aria-controls="navbarNav"
+                aria-expanded="false"
+                aria-label="Toggle navigation"
+            >
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <router-link class="nav-link" to="/"
+                            >Accueil</router-link
+                        >
+                    </li>
+                    <li class="nav-item">
+                        <router-link class="nav-link" to="/etudiants"
+                            >Étudiants</router-link
+                        >
+                    </li>
+                    <li class="nav-item">
+                        <router-link class="nav-link" to="/cours"
+                            >Cours</router-link
+                        >
+                    </li>
+                    <li class="nav-item">
+                        <router-link class="nav-link" to="/annees-academiques"
+                            >Années académiques</router-link
+                        >
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+</template>
+
+<script>
+export default {
+    name: "Navbar",
+};
+</script>
+
+<style scoped>
+.navbar-nav .nav-link {
+    margin-right: 10px;
+}
+.router-link-active {
+    font-weight: 600;
+    color: var(--bs-balck);
+}
+</style>
